@@ -15,6 +15,8 @@ def clockwise():
     tim.right(120)
 def clear_drawing():
     tim.clear()
+    tim.home()
+    tim.pendown()
 screen.listen()
 screen.onkey(move_forward, "w")
 screen.onkey(move_backward, "s")
