@@ -34,9 +34,9 @@ while game_on:
 # Check in the answer is one of the 50 states
 # I if they got it right the turtle should move to x y locationa and
 # Write the name of the state
-not_guessed_states = []
-for state in all_states:
-    if state not in guessed_states:
-        not_guessed_states.append(state)
+not_guessed_states = [state for state in all_states if state not in guessed_states]
+# for state in all_states:
+#     if state not in guessed_states:
+#         not_guessed_states.append(state)
 df = pd.DataFrame(not_guessed_states)
 df.to_csv('guessed_state.csv')
