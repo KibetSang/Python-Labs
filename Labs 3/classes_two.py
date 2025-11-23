@@ -1,5 +1,4 @@
 # Define a class named Car
-# This
 class Car:
     # Constructor method that runs when creating a new Car object
     def __init__(self, name, model):
